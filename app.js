@@ -80,6 +80,7 @@ function moveBackwards(rover){
 
 function commands(str){
   for(i=0; i<str.length; i++){
+    //this is how we know if we are using the right commands. if we use something else than f,b,l,r, we'll get the console.log
     if (str[i]!== "f" && str[i] !== "r" && str[i] !== "l" && str[i]!=="b"){
       console.log("invalid command. You can only use (f)orward, (l)eft, (b)ack or (r)ight");
      }
